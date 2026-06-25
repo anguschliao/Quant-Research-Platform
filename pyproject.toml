@@ -1,0 +1,39 @@
+[build-system]
+
+requires = [
+    "setuptools>=80",
+    "wheel"
+]
+
+build-backend = "setuptools.build_meta"
+
+[project]
+
+name = "quant-research-platform"
+version = "0.1.0"
+description = "Machine learning ensemble research framework"
+readme = "README.md"
+requires-python = ">=3.12"
+
+authors = [
+    {name = "Angus Liao"}
+]
+
+dependencies = [
+    "numpy",
+    "pandas",
+    "scipy",
+    "scikit-learn",
+    "xgboost",
+    "lightgbm",
+    "statsmodels",
+    "hmmlearn",
+    "ta",
+    "matplotlib",
+    "plotly",
+    "pyyaml",
+    "joblib",
+    "requests",
+    "python-dotenv"
+]
+
