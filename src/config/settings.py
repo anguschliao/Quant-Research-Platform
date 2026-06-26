@@ -9,6 +9,7 @@ class Settings(BaseSettings):
     oanda_api_key: str = Field(default="")
     oanda_account_id: str = Field(default="")
     oanda_env: str = Field(default="practice")
+    oanda_api_url: str = Field(default="")
 
     # =========================
     # Optional Data Providers
