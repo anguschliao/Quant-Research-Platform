@@ -53,5 +53,10 @@ class OandaClient:
             timeout=15,
         )
 
-        response.raise_for_status()
+        try:
+            response.raise_for_status()
+        except Exception:
+            print(response.text)
+            raise
+
         return response.json()
